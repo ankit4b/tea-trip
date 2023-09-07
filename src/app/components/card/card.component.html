@@ -1,0 +1,11 @@
+<div class="card" *ngIf="teaData">
+  <div class="image">
+    <img [src]="teaData.image" />
+  </div>
+  <div class="content">
+    <h3>{{ teaData.title }}</h3>
+    <p>
+      {{ teaData.description }}
+    </p>
+  </div>
+</div>

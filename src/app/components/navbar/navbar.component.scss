@@ -1,0 +1,124 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem 3rem 6rem;
+
+    .left-section{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+
+        img{
+            width: 80px;
+        }
+
+        .menu-item{
+            color: #786357;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    .right-section{
+        background-color: #807360;
+        color: #fff;
+        padding: 0.8rem;
+        padding-left: 1.5rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navbar{
+        display: none;
+        color: #786357;
+        padding-right: 2rem;
+
+        .icon{
+            font-size: 2.5rem;
+            height: 44px;
+            width: 49px;
+            cursor: pointer;
+        }
+    }
+    .small-device{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        background-color: #786357;
+        color: #fff;
+        gap: 2rem;
+
+        .close-icon{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            cursor: pointer;
+        }
+
+        .sm_left-section{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            
+            .logo{
+                position: absolute;
+                top: 3rem;
+                left: 3rem;
+            }
+
+            .menu-item{
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+
+        .sm_right-section{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            .sm_icon{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    nav {
+
+        .left-section{
+
+            .menu-item{
+                display: none;
+            }
+        }
+        .right-section{
+            display: none;
+        }
+        .navbar{
+            display: block;
+        }
+        .small-device{
+            display: flex;
+        }
+    }
+    
+}

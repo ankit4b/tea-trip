@@ -1,0 +1,108 @@
+.footer{
+    background: linear-gradient(to left, #4E3220, #4E3220, #A88E7C);
+    min-height: 50vh;
+    width: 100%;
+    padding: 3rem;
+    color: #fff;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo{
+            display: flex;
+            flex: 1;
+    
+            img{
+                width: 100px;
+                height: 80px;
+            }
+        }
+        
+        .content{
+            display: flex;
+            flex: 4;
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: space-evenly;
+            padding-top: 4rem;
+
+            .section1, .section2, .section3{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+
+                h3{
+                    font-family: 'Neucha', cursive;
+                    font-size: 1.7rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+
+                button{
+                    background-color: #E78D6E;
+                    color: #fff;
+                    font-family: 'Neucha', cursive;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    font-size: 1.2rem;
+                }
+
+            }
+    
+        }
+    
+        .social-media{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .icon{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .termsAndCondition{
+        margin-top: 4rem;
+        text-align: center;
+        font-family: 'Neucha', cursive;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    .footer{
+        position: relative;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1rem;
+
+            .logo{
+                align-self: flex-start;
+            }
+        
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .social-media{
+                margin-top: 2rem;
+                gap: 2rem;
+            }
+        }
+        
+    } 
+}

@@ -1,0 +1,136 @@
+.explore-container{
+    margin-top: 10vh;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+
+    h3{
+        font-family: 'Neucha', cursive;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        z-index: 10;
+    }
+
+    button{
+        background-color: #82A46E;
+        border: 3px solid #455f37;
+        color: #fff;
+        padding: 0.5rem 4rem;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    #img1{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+    }
+    #img2{
+        position: absolute;
+        left: 19%;
+        bottom: 0%;
+        z-index: 5;
+    }
+    #img3{
+        position: absolute;
+        left: 15%;
+        bottom: -10%;
+    }
+    #img4{
+        position: absolute;
+        right: 15%;
+        bottom: -20%;
+    }
+    #img5{
+        position: absolute;
+        right: 20%;
+        top: 10%;
+    }
+    #img6{
+        position: absolute;
+        right: 25%;
+        top: -5%;
+    }
+    #img7{
+        position: absolute;
+        right: 10%;
+        top: 0%;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .explore-container{
+        #img1{
+            position: absolute;
+            left: 10%;
+            top: 10%;
+        }
+        #img2{
+            position: absolute;
+            left: 9%;
+            bottom: 0%;
+            z-index: 5;
+        }
+        #img3{
+            position: absolute;
+            left: 5%;
+            bottom: -10%;
+        }
+        #img4{
+            position: absolute;
+            right: 5%;
+            bottom: -20%;
+        }
+        #img5{
+            position: absolute;
+            right: 10%;
+            top: 10%;
+        }
+        #img6{
+            position: absolute;
+            right: 15%;
+            top: -5%;
+        }
+        #img7{
+            position: absolute;
+            right: 5%;
+            top: 0%;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .explore-container{
+        #img2, #img3, #img6, #img7{
+            display: none;
+        }
+
+        #img1{
+            max-width: 200px;
+            left: 0;
+            top: 0;
+        }
+
+        #img4{
+            max-width: 300px;
+            bottom: 0%;
+            right: 0;
+        }
+
+        #img5{
+            max-width: 300px;
+            top: 0%;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.container{
+    // width: 75%;
+    // margin: auto;
+
+    .title{
+        text-align: center;
+        padding-bottom: 2rem;
+        h2{
+            font-size: 3rem;
+            font-family: 'Neucha', cursive;
+            color: #866F6C;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+        }
+    }
+    
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container{
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    } 
+}

@@ -1,0 +1,32 @@
+<nav>
+  <div class="left-section">
+    <img src="../../../assets/images/Frame.png" alt="TeaTrip" class="logo" />
+    <a class="menu-item" href="#drinks">Drinks</a>
+    <a class="menu-item" href="#explore">Gifts</a>
+    <a class="menu-item" href="#matcha">Merch</a>
+    <a class="menu-item" href="#party">Locations</a>
+  </div>
+  <div class="right-section">
+    <mat-icon>account_circle</mat-icon>
+    <mat-icon>search</mat-icon>
+    <mat-icon>shopping_cart</mat-icon>
+  </div>
+  <div class="navbar">
+    <mat-icon class="icon" (click)="toogleMenu(true)">menu</mat-icon>
+  </div>
+  <div class="small-device" *ngIf="SmNavMenus">
+    <mat-icon class="close-icon" (click)="toogleMenu(false)">close</mat-icon>
+    <div class="sm_left-section">
+      <img src="../../../assets/images/Frame.png" alt="TeaTrip" class="logo" />
+      <a class="menu-item" href="#drinks">Drinks</a>
+      <a class="menu-item" href="#explore">Gifts</a>
+      <a class="menu-item" href="#matcha">Merch</a>
+      <a class="menu-item" href="#party">Locations</a>
+    </div>
+    <div class="sm_right-section">
+      <mat-icon color="sm_icon">account_circle</mat-icon>
+      <mat-icon color="sm_icon">search</mat-icon>
+      <mat-icon color="sm_icon">shopping_cart</mat-icon>
+    </div>
+  </div>
+</nav>
